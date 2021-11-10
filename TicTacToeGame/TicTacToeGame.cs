@@ -15,5 +15,25 @@ namespace TicTacToeGame
                 space[i] = ' ';
             }   
         }
+        public static void PlayerChoosing()
+        {
+            string player;
+            string computer;
+
+            Console.WriteLine("Choose X or O to for playing the game");
+            player = Convert.ToString(Console.ReadLine()).ToUpper ();
+
+            if (player == "O")
+            {
+                computer = "X";
+                Console.WriteLine("Computer : " + computer);
+            }
+            else if (player == "X")
+            {
+                computer = "O";
+                Console.WriteLine("Computer : " + computer);
+            }
+                
+        }
     }
 }
